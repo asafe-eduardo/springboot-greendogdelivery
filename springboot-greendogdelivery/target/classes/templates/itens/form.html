@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+	layout:decorate="layout.html">
+	<head>
+		<meta charset="UTF-8">
+		<title>Itens</title>
+		 <!-- Bootstrap -->
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		 <!--  JQuery -->
+		 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+		 <style>
+		   input.field-error, textarea.field-error { border: 1px solid #B94A48; }
+		 </style>
+	</head>
+	<body>
+		 <div class="container">
+			 <nav class="navbar navbar-default navbar-static-top">
+			   <div class="navbar-header">
+			      <a class="navbar-brand" th:href="@{/}"><img src="../static/img/hotdog-logo.png" th:src="@{/img/hotdog-logo.png}"/></a>
+			    </div>
+				<ul class="nav navbar-nav">
+				  <li><a class="brand" href="https://www.casadocodigo.com.br">Casa do Código</a></li>
+				  <li><a class="brand" href="https://www.boaglio.com">boaglio.com</a></li>
+				  <li><a class="brand" href="https://projects.spring.io/spring-boot/">Spring Boot</a></li>
+				  <li><a class="brand" href="https://github.com/ultraq/thymeleaf-layout-dialect">Thymeleaf Layout</a></li>
+				</ul>
+			 </nav>
+			 <h1 layout:fragment="header">Cadastro de item</h1>
+			 <div layout:fragment="content" class="input-form">
+				<div class="well">
+					 <form id="itemForm" th:action="@{/itens/(form)}" th:object="${item}" action="#" method="post"  class="form-horizontal">
+						<div th:if="${#fields.hasErrors('*')}" class="alert alert-error">
+							<p th:each="error : ${#fields.errors('*')}" th:text="${error}">Erro de validação</p>
+						</div>
+						
+						<input type="hidden" th:field="*{id}" th:class="${#fields.hasErrors('id')} ? 'field-error'" />
+						 
+						<div class="form-group">
+						 <label class="control-label col-sm-2" for="nome">Nome</label> 
+						 <input class="col-sm-10" type="text" th:field="*{nome}" th:class="${#fields.hasErrors('nome')} ? 'field-error'" />
+						</div>
+						<div class="form-group">  
+						 <label class="control-label col-sm-2" for="text">Preco</label>
+						 <input class="col-sm-10" th:field="*{preco}" th:class="${#fields.hasErrors('preco')} ? 'field-error'"></input>
+						</div>
+						<div class="col-sm-offset-2 col-sm-10">
+							<input type="submit" value="Gravar" />
+						</div>
+						<br/>
+						<a th:href="@{/itens/}" href="itens.html"> voltar </a>
+					</form>
+				</div>
+			 </div>
+		 </div>
+
+	</body>
+</html>

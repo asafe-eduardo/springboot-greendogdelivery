@@ -1,0 +1,9 @@
+/home/eduardo-asafe/Documents/workspace-spring-tool-suite-4-4.0.1.RELEASE/springboot-greendogdelivery/src/main/java/com/boaglio/casadocodigo/model/Cliente.java
+/home/eduardo-asafe/Documents/workspace-spring-tool-suite-4-4.0.1.RELEASE/springboot-greendogdelivery/src/main/java/com/boaglio/casadocodigo/repositories/ClienteRepository.java
+/home/eduardo-asafe/Documents/workspace-spring-tool-suite-4-4.0.1.RELEASE/springboot-greendogdelivery/src/main/java/com/boaglio/casadocodigo/carga/RepositoryTest.java
+/home/eduardo-asafe/Documents/workspace-spring-tool-suite-4-4.0.1.RELEASE/springboot-greendogdelivery/src/main/java/com/boaglio/casadocodigo/model/Item.java
+/home/eduardo-asafe/Documents/workspace-spring-tool-suite-4-4.0.1.RELEASE/springboot-greendogdelivery/src/main/java/com/boaglio/casadocodigo/repositories/ItemRepository.java
+/home/eduardo-asafe/Documents/workspace-spring-tool-suite-4-4.0.1.RELEASE/springboot-greendogdelivery/src/main/java/com/boaglio/casadocodigo/SpringbootGreendogdeliveryApplication.java
+/home/eduardo-asafe/Documents/workspace-spring-tool-suite-4-4.0.1.RELEASE/springboot-greendogdelivery/src/main/java/com/boaglio/casadocodigo/controller/IndexController.java
+/home/eduardo-asafe/Documents/workspace-spring-tool-suite-4-4.0.1.RELEASE/springboot-greendogdelivery/src/main/java/com/boaglio/casadocodigo/repositories/PedidoRepository.java
+/home/eduardo-asafe/Documents/workspace-spring-tool-suite-4-4.0.1.RELEASE/springboot-greendogdelivery/src/main/java/com/boaglio/casadocodigo/model/Pedido.java

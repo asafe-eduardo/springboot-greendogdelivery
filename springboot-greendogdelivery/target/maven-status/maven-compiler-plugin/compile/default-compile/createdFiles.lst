@@ -1,0 +1,9 @@
+com/boaglio/casadocodigo/model/Pedido.class
+com/boaglio/casadocodigo/repositories/PedidoRepository.class
+com/boaglio/casadocodigo/model/Item.class
+com/boaglio/casadocodigo/SpringbootGreendogdeliveryApplication.class
+com/boaglio/casadocodigo/controller/IndexController.class
+com/boaglio/casadocodigo/carga/RepositoryTest.class
+com/boaglio/casadocodigo/model/Cliente.class
+com/boaglio/casadocodigo/repositories/ItemRepository.class
+com/boaglio/casadocodigo/repositories/ClienteRepository.class
